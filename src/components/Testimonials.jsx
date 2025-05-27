@@ -12,7 +12,28 @@ const testimonials = [
     role: "CFO",
     company: "StartUp Ventures",
     quote: "As a startup, every dollar counts. SoftSell provided a quick and fair valuation for our unused Microsoft licenses, giving us much-needed cash flow."
-  }
+  },
+  {
+    "name": "Priya Patel",
+    "role": "Head of IT",
+    "company": "CloudNine Innovations",
+    "quote": "Fast, reliable, and professional—SoftSell helped us offload surplus Zoom licenses at a great price. Will definitely use them again in the future."
+},{
+    "name": "Lisa Thompson",
+    "role": "Finance Director",
+    "company": "BrightStar Media",
+    "quote": "SoftSell provided a transparent and hassle-free way to monetize our unused Oracle licenses. The funds we recovered were reinvested into critical projects."
+},{
+    "name": "Emily Rodriguez",
+    "role": "VP of Operations",
+    "company": "GlobalEdge Solutions",
+    "quote": "SoftSell identified over 200 unused Autodesk licenses in our system and handled the entire resale process efficiently. Their expertise saved us both time and money."
+},{
+    "name": "Priya Patel",
+    "role": "Head of IT",
+    "company": "CloudNine Innovations",
+    "quote": "Fast, reliable, and professional—SoftSell helped us offload surplus Zoom licenses at a great price. Will definitely use them again in the future."
+}
 ]
 
 const Testimonials = () => {
