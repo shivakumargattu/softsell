@@ -24,7 +24,7 @@ function App() {
         >
           <Hero />
           <HowItWorks />
-          <WhyChooseUs />
+          <WhyChooseUs  darkMode={darkMode}/>
           <Testimonials />
           <ContactForm />
         </motion.main>

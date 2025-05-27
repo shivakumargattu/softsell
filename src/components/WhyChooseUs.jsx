@@ -24,12 +24,13 @@ const benefits = [
   }
 ]
 
-const WhyChooseUs = () => {
+const WhyChooseUs = ({darkMode}) => {
   return (
-    <section className="py-16 bg-gray-100 dark:bg-gray-800">
+    <section className="py-16 ${darkMode ? 'bg-gray-900' : 'bg-gray-100 dark:bg-gray-800'}">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Why Choose SoftSell?</h2>
-        
+        <h2 className={`text-3xl font-bold text-center mb-12 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+      Why Choose SoftSell?
+    </h2>           
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit, index) => (
             <motion.div
