@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
-const ContactForm = () => {
+const ContactForm = ({darkMode}) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -52,7 +52,7 @@ const ContactForm = () => {
   }
 
   return (
-    <section className="py-16 bg-gray-100 dark:bg-gray-800">
+    <section className="py-16 ${darkMode ? 'bg-gray-900' : 'bg-gray-100 dark:bg-gray-800'}">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ const ContactForm = () => {
           viewport={{ once: true }}
           className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md"
         >
-          <h2 className="text-3xl font-bold text-center mb-8">Get a Free Valuation</h2>
+          <h2 className='{text-3xl font-bold text-center mb-8 ${darkMode? text-gray-800 : text-gray-800}'>Get a Free Valuation</h2>
           
           {submitted ? (
             <div className="text-center py-8">

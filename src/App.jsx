@@ -26,7 +26,7 @@ function App() {
           <HowItWorks />
           <WhyChooseUs  darkMode={darkMode}/>
           <Testimonials />
-          <ContactForm />
+          <ContactForm darkMode={darkMode}/>
         </motion.main>
         
         <footer className="py-8 border-t border-gray-200 dark:border-gray-700 mt-12">
